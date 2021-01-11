@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>beat</title>
+  </head>
+  <body>
+    <div class="sequencer">
+      <div class="kick-track">
+        <div class="controls" data-track="0">
+          <h1>Kick</h1>
+          <button class="mute kick-volume"></button>
+          <select name="kick-select" id="kick-select">
+            <option value="./sounds/kick-classic.wav">classic kick</option>
+            <option value="./sounds/kick-808.wav">808 kick</option>
+            <option value="./sounds/kick-heavy.wav">kick heavy</option>
+          </select>
+        </div>
+        <div class="kick">
+          <div class="pad kick-pad beat0"></div>
+          <div class="pad kick-pad beat1"></div>
+          <div class="pad kick-pad beat2"></div>
+          <div class="pad kick-pad beat3"></div>
+          <div class="pad kick-pad beat4"></div>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: rgb(48, 48, 48);
+  font-size: 20px;
+}
+
+.sequencer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.kick-pad,
+.snare-pad,
+.hihat-pad {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.kick-pad {
+  background: linear-gradient(180deg, #ef9d9d 0%, rgba(162, 201, 248, 0) 100%);
+}
+.kick-pad.active {
+  background: linear-gradient(180deg, #ef9d9d 0%, rgba(162, 201, 248, 0) 100%);
+}
+
+.snare-pad {
+  background: linear-gradient(180deg, #648edf 0%, rgba(213, 164, 120, 0) 100%);
+}
+.snare-pad.active {
+  background: linear-gradient(180deg, #ef9d9d 0%, rgba(162, 201, 248, 0) 100%);
+}
+
+.hihat-pad {
+  background: linear-gradient(180deg, #85ead8 0%, rgba(252, 101, 110, 0) 100%);
+}
+.hihat-pad.active {
+  background: linear-gradient(180deg, #ef9d9d 0%, rgba(162, 201, 248, 0) 100%);
+}
+
+.hihat-track,
+.snare-track,
+.kick-track {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.kick,
+.snare,
+.hihat {
+  display: flex;
+}
+
+.pad {
+  transition: all 0.5s ease-in-out;
+}
+
+.play {
+  padding: 10px;
+  margin: 10px;
+  background: white;
+  color: rgb(48, 48, 48);
+  border: none;
+  cursor: pointer;
+}
+
+select {
+  padding: 10px;
+  margin: 10px;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+}

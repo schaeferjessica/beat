@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
     <title>beat</title>
   </head>
@@ -16,13 +21,12 @@
             <option value="./sounds/kick-heavy.wav">kick heavy</option>
           </select>
         </div>
-        <div class="kick">
-          <div class="pad kick-pad beat0"></div>
-          <div class="pad kick-pad beat1"></div>
-          <div class="pad kick-pad beat2"></div>
-          <div class="pad kick-pad beat3"></div>
-          <div class="pad kick-pad beat4"></div>
-        </div>
+
+        <div class="pad kick-pad beat0"></div>
+        <div class="pad kick-pad beat1"></div>
+        <div class="pad kick-pad beat2"></div>
+        <div class="pad kick-pad beat3"></div>
+        <div class="pad kick-pad beat4"></div>
       </div>
 
       <div class="hihat-track">
@@ -35,13 +39,12 @@
             <option value="./sounds/hihat-analog.wav">hihat analog</option>
           </select>
         </div>
-        <div class="hihat">
-          <div class="pad hihat-pad beat0"></div>
-          <div class="pad hihat-pad beat1"></div>
-          <div class="pad hihat-pad beat2"></div>
-          <div class="pad hihat-pad beat3"></div>
-          <div class="pad hihat-pad beat4"></div>
-        </div>
+
+        <div class="pad hihat-pad active beat0"></div>
+        <div class="pad hihat-pad beat1"></div>
+        <div class="pad hihat-pad beat2"></div>
+        <div class="pad hihat-pad beat3"></div>
+        <div class="pad hihat-pad beat4"></div>
       </div>
 
       <div class="snare-track">
@@ -52,15 +55,17 @@
             <option value="./sounds/snare-vinyl01.wav">snare vinyl</option>
           </select>
         </div>
-        <div class="snare">
-          <div class="pad snare-pad beat0"></div>
-          <div class="pad snare-pad beat1"></div>
-          <div class="pad snare-pad beat2"></div>
-          <div class="pad snare-pad beat3"></div>
-          <div class="pad snare-pad beat4"></div>
-        </div>
+
+        <div class="pad snare-pad beat0"></div>
+        <div class="pad snare-pad beat1"></div>
+        <div class="pad snare-pad beat2"></div>
+        <div class="pad snare-pad beat3"></div>
+        <div class="pad snare-pad beat4"></div>
       </div>
-      <button class="play">play</button>
+
+      <div class="play-track">
+        <button class="play">play</button>
+      </div>
     </div>
     <script src="./app.js"></script>
   </body>
